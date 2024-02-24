@@ -1,5 +1,5 @@
 on runTest(_command)
-	tell application "Alacritty"
+	tell application "alacritty"
 		activate
 
 		set theWindow to current window
