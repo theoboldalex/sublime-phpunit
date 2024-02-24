@@ -76,7 +76,7 @@ class PhpunitTestCommand(sublime_plugin.WindowCommand):
         if self.get_setting('phpunit-sublime-terminal', 'Term') == 'iTerm':
             osascript_command += '"' + os.path.dirname(os.path.realpath(__file__)) + '/open_iterm.applescript"'
             osascript_command += ' "' + command + '"'
-        elif self.get_setting('phpunit-sublime-terminal', 'Term') == 'Alacritty':
+        elif self.get_setting('phpunit-sublime-terminal', 'Term') == 'alacritty':
             osascript_command += '"' + os.path.dirname(os.path.realpath(__file__)) + '/open_alacritty.applescript"'
             osascript_command += ' "' + command + '"'
         else:
